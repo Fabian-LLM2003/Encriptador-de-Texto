@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="esp"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Encriptador de Texto</title>
+		<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+		<link rel="stylesheet" type="text/css" href="CSS/archivo.css">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+				<h1><img class="logo" src="Multimedia/logo.png">Encriptador</h1>
+		</header>
+
+		<main>
+			<section class="position1">
+				<textarea type="text" class="textarea1" cols="20" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+				<h6 class="indicación">¡Solo letras minúsculas y sin acentos!</h6>
+				<button type="button" onclick="btnencriptar()">Encriptar</button> 
+				<button type="button" onclick="btndesencriptar()">Desencriptar</button> 		
+			</section>
+			<section class="position2">
+				<textarea type="text" cols="18" rows="10" class="textarea2"placeholder="Su texto aparecerá aquí"></textarea>
+				<button onclick="copiarAlPortapapeles()">copiar</button>
+			</section>
+		</main>
+
+		<footer>
+			<div class="icons">
+				<a href="https://www.linkedin.com/in/leandro-lópez-673ba1224/" class="icon icon--linkedin">
+				  <i class="ri-linkedin-line"></i>
+				</a>
+				<a href="https://github.com/Fabian-LLM2003" class="icon icon--github">
+				  <i class="ri-github-line"></i>
+				</a>
+			</div>			
+		</footer>
+	</body>
+	<script src="JS/script.js"></script>
+</html>

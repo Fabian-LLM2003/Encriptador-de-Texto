@@ -1,0 +1,151 @@
+	
+	html,body{
+		background-color: rgba(202,228,247,255);
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 30px;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header {
+		flex: 1;
+	}
+
+	.logo{
+		padding: 25px;
+		width: 5%;
+		vertical-align: middle;
+	}
+
+	main{
+		display: flex;
+		padding: 10%;
+		justify-content:center;
+		flex: 1;
+	}
+
+	.position1 {
+		margin: 0 auto;
+	}
+
+	.textarea1{
+		background-color:rgba(61,97,137,255);
+		border-radius: 15px;
+		color: white;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		opacity: 0.5;
+		border: 2px solid #000000;
+		font-size: 60%;
+	}
+
+	::placeholder {
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.indicación{
+		color: grey;
+		font-style: italic;
+		font-size: 50%;
+	}
+
+	button{
+		background-color:  rgba(202,228,247,255);
+		font-size: 50%;
+		border-radius: 10px;
+		border: 2px solid #000000;
+		font-size: 60%
+	}
+
+	button:hover {
+		background-color: #0077b5;
+		transition-duration: .25s;
+
+	}
+
+	.position2 {
+		margin: 0 auto;
+	}
+
+	.textarea2{
+		background-color:rgba(61,97,137,255);
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		opacity: 0.5;
+		border: 2px solid #000000;
+		font-size: 60%;
+
+	}
+
+	footer{
+		text-align: center;
+		background: url(footer/fondo.gif);
+		padding: 60px;
+		background-size: cover;
+		flex: 1;
+	}
+
+	.icons {
+		column-gap: 25px;
+	}
+	
+	.icon {
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		font-size: 26px;
+		color: #000;
+		border-radius: 50%;
+		outline: 2px solid #000;
+		transition-property:
+			outline-offset, outline-color,
+			background-color;
+		transition-duration: .25s;
+	}
+	
+	.icon:hover {
+		outline-offset: 4px;
+	}
+	
+	.icon:hover i {
+		animation: shake .25s;
+
+	}
+	
+	.icon--linkedin:hover {
+		background-color: #0077b5;
+		outline-color: #0077b5;
+	}
+	
+	.icon--github:hover {
+		background-color: #2ea44f;
+		outline-color: #2ea44f;
+
+
+	}
+	
+	@keyframes shake {
+		10% {
+			transform: rotate(15deg);
+		}
+	
+		20% {
+			transform: rotate(-15deg);
+		}
+	
+		30% {
+			transform: rotate(15deg);
+		}
+	
+		40% {
+			transform: rotate(-15deg);
+		}
+	}
